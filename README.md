@@ -1,17 +1,18 @@
 # whmcs-node
 
-A Typescript/Javascript API wrapper for WHMCS.
+A Typescript/Javascript API wrapper for WHMCS, using `ky` so it works in a browser environment.
 
 ## Example use
 
-`npm i whmcs-node`
+`yarn add @dan-online/whmcs-not-node`
+`npm i @dan-online/whmcs-not-node`
 
 ```js
 // typescript
-import 'WhmcsApi' from 'whmcs-node';
+import { WhmcsApi } from '@dan-online/whmcs-not-node';
 
 // javascript
-const WhmcsApi = require('whmcs-node').default
+const { WhmcsApi } = require('@dan-online/whmcs-not-node');
 
 const whmcs = new WhmcsApi({
   identifier: "",
