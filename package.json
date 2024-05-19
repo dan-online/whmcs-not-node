@@ -1,18 +1,18 @@
 {
-  "name": "whmcs-node",
-  "version": "1.0.14",
+  "name": "@dan-online/whmcs-not-node",
+  "version": "1.1.2",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsup src/index.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shockbyte/whmcs-node.git"
+    "url": "git+https://github.com/dan-online/whmcs-not-node.git"
   },
   "keywords": [],
-  "author": "Shockbyte",
+  "author": "DanCodes <dan@dancodes.online>",
   "contributors": [
     {
       "name": "James Hawkins",
@@ -23,6 +23,11 @@
       "name": "Niek van Gogh",
       "email": "niek@shockbyte.com",
       "url": "https://github.com/niekvangogh"
+    },
+    {
+      "name": "DanCodes",
+      "email": "dan@dancodes.online",
+      "url": "https://dancodes.online"
     }
   ],
   "license": "ISC",
@@ -31,6 +36,11 @@
   },
   "homepage": "https://github.com/shockbyte/whmcs-node#readme",
   "dependencies": {
-    "got": "^11.8.0"
+    "ky": "^1.2.4"
+  },
+  "packageManager": "yarn@4.2.2",
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
   }
 }

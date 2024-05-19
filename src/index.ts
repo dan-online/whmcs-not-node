@@ -17,7 +17,7 @@ import { WhmcsTicketsService } from "./module/tickets";
 import { WhmcsUsersService } from "./module/users";
 import { WhmcsClientCustom } from "./module/custom";
 
-export default class WhmcsApi {
+export class WhmcsApi {
 
   public static options: WhmcsSetupOptions;
 
@@ -43,3 +43,6 @@ export default class WhmcsApi {
   public users: WhmcsUsersService = new WhmcsUsersService;
   public custom: WhmcsClientCustom = new WhmcsClientCustom;
 }
+
+export * from "./interface/client/get-clients-products";
+export * from "./interface/client/get-clients-details";
